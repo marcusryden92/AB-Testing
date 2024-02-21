@@ -36,8 +36,8 @@ function ButtonA() {
     <button
       className={`button  ${
         isFlashing
-          ? "bg-red-500 text-blue-500 hover:bg-orange-400 hover:text-white"
-          : "bg-blue-500 text-red-500 hover:bg-white hover:text-orange-400"
+          ? "bg-red-500 text-blue-500 hover:bg-pink-400 hover:text-white"
+          : "bg-blue-500 text-red-500 hover:bg-white hover:text-pink-400"
       }`}
     >
       КУПИТЬ СЕЙЧАС!

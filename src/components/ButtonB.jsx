@@ -36,8 +36,8 @@ function ButtonB() {
     <button
       className={`button  ${
         isFlashing
-          ? "bg-yellow-500 text-black hover:bg-orange-400 hover:text-white"
-          : "bg-black text-yellow-500 hover:bg-white hover:text-orange-400"
+          ? "bg-yellow-500 text-black hover:bg-pink-400 hover:text-white"
+          : "bg-black text-yellow-500 hover:bg-white hover:text-pink-400"
       }`}
       onClick={handleClick}
     >
