@@ -10,8 +10,10 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h1 className="text-5xl font-extrabold mt-10">ЛУЧШИЙ ПЫЛЕСОС!</h1>
+    <div className="bg-yellow-800 flex flex-col justify-center items-center">
+      <h1 className="text-5xl text-white font-extrabold mt-10">
+        ЛУЧШИЙ ПЫЛЕСОС!
+      </h1>
       <p></p>
       <img
         className="mt-10 rounded-[3rem] w-1/3 h-auto"
