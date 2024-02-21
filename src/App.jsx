@@ -15,7 +15,7 @@ function App() {
       <p></p>
       <img
         className="mt-10 rounded-[3rem] w-1/3 h-auto"
-        src="./src/images/vacuum.jpg"
+        src="https://raw.githubusercontent.com/marcusryden92/AB-Testing/master/src/images/vacuum.jpg"
       />
       {displayedForm === "A" ? <ButtonA /> : <ButtonB />}
     </div>
