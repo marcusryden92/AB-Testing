@@ -1,29 +1,25 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import FormA from "./components/FormA";
-import FormB from "./components/FormB";
+import ButtonA from "./components/ButtonA";
+import ButtonB from "./components/ButtonB";
 
 function App() {
-	const [displayedForm, setDisplayedForm] = useState("A");
-	useEffect(() => {
-		Math.random() < 0.5 ? setDisplayedForm("A") : setDisplayedForm("B");
-	}, []);
+  const [displayedForm, setDisplayedForm] = useState("A");
+  useEffect(() => {
+    Math.random() < 0.5 ? setDisplayedForm("A") : setDisplayedForm("B");
+  }, []);
 
-	return (
-		<>
-			<h1>A/B TESTING</h1>
-			<p>
-				This page serves as a demonstration of A/B testing, a method used to compare two
-				versions of a webpage to determine which one performs better. The page comprises two
-				sections: a static section that remains unchanged between versions A and B, and a
-				<span> dynamic </span> section that varies based on a fifty-fifty chance of loading for
-				each user. Both versions feature a call-to-action (CTA) button, which prompts user
-				interaction. Additionally, GDPR information is provided via the console for
-				transparency purposes.
-			</p>
-			{displayedForm === "A" ? <FormA /> : <FormB />}
-		</>
-	);
+  return (
+    <div className="flex flex-col justify-center items-center">
+      <h1 className="text-5xl font-extrabold mt-10">ЛУЧШИЙ ПЫЛЕСОС!</h1>
+      <p></p>
+      <img
+        className="mt-10 rounded-[3rem] w-1/3 h-auto"
+        src="./src/images/vacuum.jpg"
+      />
+      {displayedForm === "A" ? <ButtonA /> : <ButtonB />}
+    </div>
+  );
 }
 
 export default App;
